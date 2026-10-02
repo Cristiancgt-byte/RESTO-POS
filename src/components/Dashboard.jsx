@@ -25,6 +25,7 @@ function Dashboard({
   const chartHorasInstance = useRef(null);
   const chartSemanalInstance = useRef(null);
 
+  
   const fmt = (n) => "$" + Math.round(n).toLocaleString("es-CO");
 
   const totalGastos = gastos.reduce((s, g) => s + g.val, 0);
